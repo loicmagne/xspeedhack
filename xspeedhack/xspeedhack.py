@@ -12,7 +12,7 @@ if platform.system() == "Windows":
     import win32file
 
 def resolve_resource(resource_name: str) -> Path:
-    return Path(resources.files("bin") / resource_name)
+    return Path(resources.files("xspeedhack.bin") / resource_name)
     
 RESOURCES = {
     "x86": {
