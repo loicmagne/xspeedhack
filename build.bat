@@ -5,6 +5,9 @@ REM Define directories
 set BUILD_DIR=build
 set BIN_DIR=xspeedhack\bin
 
+REM Clean previous build
+if exist %BUILD_DIR% rmdir /s /q %BUILD_DIR%
+
 REM Create necessary directories
 if not exist %BIN_DIR% mkdir %BIN_DIR%
 

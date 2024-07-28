@@ -137,7 +137,7 @@ void InitializeSpeedHackConnection(LPVOID hModule)
 	int float_idx = 0;
 	float speed_cmd = 1.0;
 
-	hPipe = CreateNamedPipe(TEXT("\\\\.\\pipe\\SoulsGymSpeedHackPipe"),
+	hPipe = CreateNamedPipe(TEXT("\\\\.\\pipe\\xspeedhackpipe"),
 							PIPE_ACCESS_DUPLEX,
 							PIPE_TYPE_BYTE | PIPE_READMODE_BYTE | PIPE_WAIT, // FILE_FLAG_FIRST_PIPE_INSTANCE is not needed but forces CreateNamedPipe(..) to fail if the pipe already exists...
 							1,

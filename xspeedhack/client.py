@@ -35,7 +35,7 @@ def get_pid(process_name: str) -> int:
 
 
 class SpeedHackClient:
-    PIPE_NAME = r"\\.\pipe\SoulsGymSpeedHackPipe"
+    PIPE_NAME = r"\\.\pipe\xspeedhackpipe"
 
     def __init__(
         self,
