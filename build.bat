@@ -22,8 +22,9 @@ if %ERRORLEVEL% neq 0 exit /b %ERRORLEVEL%
 
 REM Copy executables
 copy /y %BUILD_DIR%\x86\Release\injector.exe %BIN_DIR%\injector32.exe
-if %ERRORLEVEL% neq 0 exit /b %ERRORLEVEL%
+copy /y %BUILD_DIR%\x86\Release\speedhack.dll %BIN_DIR%\speedhack32.dll
 copy /y %BUILD_DIR%\x64\Release\injector.exe %BIN_DIR%\injector64.exe
+copy /y %BUILD_DIR%\x64\Release\speedhack.dll %BIN_DIR%\speedhack64.dll
 if %ERRORLEVEL% neq 0 exit /b %ERRORLEVEL%
 
 endlocal

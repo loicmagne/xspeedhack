@@ -1,1 +1,1 @@
-from .xspeedhack import SpeedHackClient as Client
+from .client import SpeedHackClient as Client

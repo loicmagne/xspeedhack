@@ -17,11 +17,11 @@ def resolve_resource(resource_name: str) -> Path:
 
 RESOURCES = {
     "x86": {
-        "dll": resolve_resource("SpeedHackDLL32.dll"),
+        "dll": resolve_resource("speedhack32.dll"),
         "inj": resolve_resource("injector32.exe"),
     },
     "x64": {
-        "dll": resolve_resource("SpeedHackDLL64.dll"),
+        "dll": resolve_resource("speedhack64.dll"),
         "inj": resolve_resource("injector64.exe"),
     },
 }
