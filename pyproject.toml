@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "xspeedhack"
-version = "0.0.1"
+version = "0.0.2"
 description = "Universal speedhack library for Python"
 readme = "README.md"
 authors = [{name = "Loïc Magne", email = "loic.magne@outlook.com"}]

@@ -4,6 +4,16 @@ project(xspeedhack)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
+
+if(MSVC)
+    add_compile_options(
+        $<$<CONFIG:>:/MT> #---------- Multithreaded
+        $<$<CONFIG:Debug>:/MTd> #---- Multithreaded Debug
+        $<$<CONFIG:Release>:/MT> #--- Multithreaded
+    )
+endif()
+
 # Injector executable
 
 set(EXE_SOURCES
