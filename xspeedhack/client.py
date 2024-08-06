@@ -40,6 +40,7 @@ class SpeedHackClient:
     def __init__(
         self,
         process_name: str = None,
+        *,
         process_id: int = None,
         arch: Literal["x86", "x64"] = "x64",
     ):
